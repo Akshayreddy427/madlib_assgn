@@ -1,0 +1,180 @@
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif; /* Clean and modern font */
+    margin: 0;
+    padding: 20px;
+    background-color: #fffbf0; /* Soft cream background */
+    color: #333; /* Dark gray text for readability */
+    line-height: 1.6;
+    animation: fadeIn 1s ease-out; /* Animation for body */
+}
+
+/* Heading Styling */
+h1 {
+    text-align: center;
+    color: #2c3e50; /* Dark blue for the heading */
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+    border-bottom: 4px solid #f39c12; /* Golden yellow underline */
+    padding-bottom: 12px;
+    font-size: 2.5rem;
+    animation: slideIn 1s ease-out; /* Slide-in effect for heading */
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.15); /* Subtle shadow */
+}
+
+/* Form Container */
+form {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 35px;
+    background: linear-gradient(135deg, #f39c12, #f1c40f); /* Gradient background from gold to yellow */
+    border: 1px solid #d1d1d1;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1); /* Soft shadow for form */
+    animation: bounceIn 1s ease-out; /* Bounce in effect for form */
+}
+
+/* Label Styling */
+label {
+    display: block;
+    margin: 15px 0 8px;
+    font-weight: 600;
+    color: #2c3e50; /* Dark blue for labels */
+    font-size: 1.1rem;
+}
+
+/* Input Field Styling */
+input[type="text"] {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 22px;
+    border: 2px solid #bdc3c7;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    transition: box-shadow 0.3s, border-color 0.3s ease;
+    background-color: #fff; /* White background for inputs */
+    animation: fadeInInput 1s ease-out; /* Animation for input fields */
+}
+
+/* Focused Input Field */
+input[type="text"]:focus {
+    outline: none;
+    border-color: #3498db; /* Blue border when focused */
+    box-shadow: 0 0 12px rgba(52, 152, 219, 0.6); /* Focus highlight */
+    background-color: #ffffff; /* White background on focus */
+}
+
+/* Button Styling */
+button {
+    display: block;
+    width: 100%;
+    padding: 16px;
+    background-color: #e74c3c; /* Red button */
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+    box-shadow: 0px 6px 16px rgba(231, 76, 60, 0.3); /* Soft shadow */
+    animation: zoomIn 1s ease-out; /* Zoom in effect for button */
+}
+
+/* Button Hover Effect */
+button:hover {
+    background-color: #c0392b; /* Darker red when hovered */
+    transform: scale(1.05); /* Slight scaling effect */
+}
+
+/* Button Active Effect */
+button:active {
+    background-color: #e74c3c; /* Red color when clicked */
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow on click */
+}
+
+/* Footer Styling */
+footer {
+    margin-top: 40px;
+    text-align: center;
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    padding: 20px 0;
+    border-top: 2px solid #ddd;
+}
+
+/* Footer Link Styling */
+footer a {
+    color: #3498db; /* Blue links */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth color transition for links */
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #2980b9; /* Darker blue on hover */
+}
+
+/* Animations */
+
+/* Fade-In Animation for body */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Slide-In Animation for heading */
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Bounce-In Animation for form */
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.7);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Fade-In Animation for input fields */
+@keyframes fadeInInput {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Zoom-In Animation for button */
+@keyframes zoomIn {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
