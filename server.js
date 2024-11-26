@@ -12,14 +12,14 @@ server.get('/do_a_random', (req, res) => {
 });
 
 // Handle POST route
-server.post('/ITC-505/LAB-7', (req, res) => {
+server.post('/ITC505/lab-7', (req, res) => {
     const { noun, verb, adjective, adverb, pluralNoun } = req.body;
 
     if (!noun || !verb || !adjective || !adverb || !pluralNoun) {
         res.send(`
             <h1>Submission Failed</h1>
             <p>Please fill out ALL fields.</p>
-            <a href="/ITC-505/LAB-7/index.html">Go Back to Form</a>
+            <a href="/ITC505/lab-7/index.html">Go Back to Form</a>
         `);
         return;
     }
@@ -33,7 +33,7 @@ server.post('/ITC-505/LAB-7', (req, res) => {
     res.send(`
         <h1>Mad Lib Story</h1>
         <p>${madLib}</p>
-        <a href="/ITC-505/LAB-7/index.html">Create Another Space Adventure Mad Lib story</a>
+        <a href="/ITC505/lab-7/index.html">Create Another Space Adventure Mad Lib story</a>
     `);
 });
 
